@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot Arm Control Panel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="control-panel">
+        <h2>Robot Arm Control Panel</h2>
+        <div class="sliders">
+            <label for="motor1">Motor 1: <span id="motor1-value">90</span></label>
+            <input type="range" id="motor1" min="0" max="180" value="90">
+            <label for="motor2">Motor 2: <span id="motor2-value">90</span></label>
+            <input type="range" id="motor2" min="0" max="180" value="90">
+            <label for="motor3">Motor 3: <span id="motor3-value">90</span></label>
+            <input type="range" id="motor3" min="0" max="180" value="90">
+            <label for="motor4">Motor 4: <span id="motor4-value">90</span></label>
+            <input type="range" id="motor4" min="0" max="180" value="90">
+            <label for="motor5">Motor 5: <span id="motor5-value">90</span></label>
+            <input type="range" id="motor5" min="0" max="180" value="90">
+            <label for="motor6">Motor 6: <span id="motor6-value">90</span></label>
+            <input type="range" id="motor6" min="0" max="180" value="90">
+        </div>
+        <button id="reset">Reset</button>
+        <button id="savePose">Save Pose</button>
+        <button id="run">Run</button>
+
+        <h3>Saved Positions</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Motor 1</th>
+                    <th>Motor 2</th>
+                    <th>Motor 3</th>
+                    <th>Motor 4</th>
+                    <th>Motor 5</th>
+                    <th>Motor 6</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="positions_body">
+                <!-- Saved positions will be loaded here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

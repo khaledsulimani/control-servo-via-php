@@ -140,7 +140,6 @@ A: Yes, but you’ll need to update the HTML, JS, and database table accordingly
 ---
 ## *Code Explanation* 📝💻
 
-## 📂 Brief Overview of Each File
 
 - **control.html**  
   The main web page for the robot arm control panel. It contains the layout, slider controls for each motor, and buttons for saving, loading, running, and resetting poses. It also displays a table of saved positions.
